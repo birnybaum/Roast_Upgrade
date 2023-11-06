@@ -20,8 +20,27 @@ To add MultiPrior to ROAST you will need to download the MultiPrior zip file and
   - `Segmentation_config.py`
   - `best_model_tf2_singleGPUepoch100.h5`
   - `scripts` folder
-  - `MultiPriors_env` folder
-    - Download and Unzip `MultiPriors_env.zip` in the same file location. (MultiPriors_WEB folder)
+  - `MultiPriors_env`
+  - After cloning the repository:
+
+```
+WINDOWS
+conda env create -f MultiPriors_env.yml -n MultiPriors_env
+move C:\path\to\anaconda3\envs\MultiPriors_env C:\path\to\roast-3.0\lib\MultiPriors_WEB
+```
+
+```
+LINUX (Ubuntu 22.04)
+conda env create -f  MultiPriors_env_linux.yml -n MultiPriors_env_linux
+mv /path/to/anaconda3/envs/MultiPriors_env_linux /path/to/roast-3.0/lib/MultiPriors_WEB
+```
+
+```
+macOS
+conda env create -f  MultiPriors_env_mac.yml -n MultiPriors_env_mac
+mv /path/to/anaconda3/envs/MultiPriors_env_mac /path/to/roast-3.0/lib/MultiPriors_WEB
+```
+
 
 - `ROAST_GUI.mlappinstall`: Move this to the `roast-3.0` folder.
 
