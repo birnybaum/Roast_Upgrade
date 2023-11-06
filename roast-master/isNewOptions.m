@@ -187,6 +187,11 @@ switch fun
             return
         end
         
+        if optNew.multiprior ~= optOld.multiprior
+            isNewOpt = 1;
+            return
+        end
+
         if optNew.zeroPad ~= optOld.zeroPad
             isNewOpt = 1;
             return
