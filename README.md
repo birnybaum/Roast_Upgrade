@@ -1,8 +1,12 @@
 # ROAST 3.0 MultiPrior Upgrade
 
-The most recent ROAST update will have a new feature installed: MultiPrior. The purpose of MultiPrior is to provide a more accurate MRI segmentation when dealing with abnormalities such as a lesion or an enlarged brain stem that the original ROAST does not consider while segmenting. The MultiPrior AI associates tissue type with neighboring tissue to make predictions which will successfully segment important tissue types as accurately as possible. The goal is to simply add multiprior without the need for python environment creations, which might be difficult.
-
 To call MultiPrior, call `roast(subj, 'multiprior', 'on')`. This will not work if a previous segmentation was done before the upgrade because the options and option files have changed.
+
+`'multiprior'` -- advanced options of ROAST, for controlling multiprior segmentation
+`'on' | 'off' (default)`  
+The most recent ROAST update will have a new feature installed: MultiPrior. The purpose of MultiPrior is to provide a more accurate MRI segmentation when dealing with abnormalities such as a lesion or an enlarged brain stem that the original ROAST does not consider while segmenting. The MultiPrior AI associates tissue type with neighboring tissue to make predictions which will successfully segment important tissue types as accurately as possible. The goal is to simply add multiprior without the need for python environment creations, which might be difficult.
+(see [Example](#example)).  
+
 
 ## Installing MultiPrior
 
