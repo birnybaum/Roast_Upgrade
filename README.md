@@ -9,6 +9,7 @@ To call MultiPrior, call `roast(subj, 'multiprior', 'on')`. This will not work i
 To add MultiPrior to ROAST you will need to download the MultiPrior zip file and make a few changes to the `roast.m` file. The MultiPrior zip file contains the following:
 
 - `MultiPrior.m`: Move this to the `roast-3.0` folder.
+- `renameFiles.M`: Move this to the `roast-3.0` folder.
 
 - `Defs.m`: Move this to the `spm12` folder in the `lib` folder in `roast-3.0`.
 
@@ -20,6 +21,7 @@ To add MultiPrior to ROAST you will need to download the MultiPrior zip file and
   - `Segmentation_config.py`
   - `best_model_tf2_singleGPUepoch100.h5`
   - `scripts` folder
+    
   - After cloning the repository, Create MultiPriors Enviornment using the .yml file specific to your computer and move to MultiPriors_WEB folder
 
 ```
@@ -40,11 +42,7 @@ conda env create -f  MultiPriors_env_mac.yml -n MultiPriors_env_mac
 mv /path/to/anaconda3/envs/MultiPriors_env_mac /path/to/roast-3.0/lib/MultiPriors_WEB
 ```
 
-
 - `ROAST_GUI.mlappinstall`: Move this to the `roast-3.0` folder.
-
-- `renameFiles.M`: Move this to the `roast-3.0` folder.
 
 That's it! You should now have MultiPrior integrated into your ROAST 3.0 installation.
 
-Feel free to modify this markdown document as needed for your GitHub repository.
