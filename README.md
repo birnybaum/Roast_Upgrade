@@ -20,8 +20,7 @@ To add MultiPrior to ROAST you will need to download the MultiPrior zip file and
   - `Segmentation_config.py`
   - `best_model_tf2_singleGPUepoch100.h5`
   - `scripts` folder
-  - `MultiPriors_env`
-  - After cloning the repository:
+  - After cloning the repository, Create MultiPriors Enviornment using the .yml file specific to your computer and move to MultiPriors_WEB folder
 
 ```
 WINDOWS
