@@ -7,6 +7,11 @@ To call MultiPrior, call `roast(subj, 'multiprior', 'on')`. This will not work i
 The most recent ROAST update will have a new feature installed: MultiPrior. The purpose of MultiPrior is to provide a more accurate MRI segmentation when dealing with abnormalities such as a lesion or an enlarged brain stem that the original ROAST does not consider while segmenting. The MultiPrior AI associates tissue type with neighboring tissue to make predictions which will successfully segment important tissue types as accurately as possible. The goal is to simply add multiprior as simply as possible as it runs using Python. Scripts will be added to roast-3.0 which allow MultiPrior to run seamlessly. A conda enviornment will have to be created using the system specific .yml file.
 (see [Example](#example)).  
 
+#### Example 
+
+    roast('example/subject1.nii',[],'multiprior','on')
+
+Run simulaiton on subject1 with default recipe, but use multiprior segmenations instead of spm.
 
 ## Installing MultiPrior
 
