@@ -21,7 +21,7 @@ To add MultiPrior to ROAST you will need to download the MultiPrior zip file and
   - `best_model_tf2_singleGPUepoch100.h5`
   - `scripts` folder
   - `MultiPriors_env` folder
-    - Download and Unzip `MultiPriors_env.zip` in the same file location. (MultiPriors_WEB` folder)
+    - Download and Unzip `MultiPriors_env.zip` in the same file location. (MultiPriors_WEB folder)
 
 - `ROAST_GUI.mlappinstall`: Move this to the `roast-3.0` folder.
 
