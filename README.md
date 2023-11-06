@@ -6,21 +6,20 @@ The MultiPrior AI associates tissue type with neighboring tissue to make predict
 The goal is to simply add multiprior without the need for python enviornment creations which might be difficult. 
 
 To call MultiPrior, call roast(subj,‘multiprior’,’on’)
-This will work if:
-•	ROAST was not yet run on this subject
-•	ROAST was run with ‘multiprior’,‘off’
+This will not work if a previous segmentation was done before the upgrade because the options and option files have changed.
+
 To add MultiPrior to ROAST you will need to download the MultiPrior zip file and make a few changes to the roast.m file.
 MultiPrior zip file contains:
 •	MultiPrior.m, this should be moved to the roast-3.0 folder
 •	Defs.m, this should be moved to the spm12 folder in the lib folder in roast-3.0
 •	MultiPriors_WEB folder, this should be moved to the lib folder in roast-3.0
-o	WARP_indiTPM.m
-o	SEGMENT.m
-o	SEGMENT.py
-o	Segmentation_config.py’
-o	best_model_tf2_singleGPUepoch100.h5
-o	scripts folder
-o	MultiPriors_env folder
-	Unzip MultiPriors_env.rar in the same file location 
+  o	WARP_indiTPM.m
+  o	SEGMENT.m
+  o	SEGMENT.py
+  o	Segmentation_config.py’
+  o	best_model_tf2_singleGPUepoch100.h5
+  o	scripts folder
+  o	MultiPriors_env folder
+  	Unzip MultiPriors_env.rar in the same file location 
 •	ROAST_GUI.mlappinstall, this should be moved to the roast-3.0 folder
 •	renameFiles.M, , this should be moved to the roast-3.0 folder
