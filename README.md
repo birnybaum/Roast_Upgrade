@@ -15,7 +15,8 @@ Run simulaiton on subject1 with default recipe, but use multiprior segmenations 
 
 ## Installing MultiPrior
 
-To add MultiPrior to ROAST you will need to download the MultiPrior zip file and make a few changes to the `roast.m` file. The MultiPrior zip file contains the following:
+To add MultiPrior to ROAST you will need to download the MultiPrior zip file and make a few changes to the `roast.m` file.
+The MultiPrior zip file contains the following:
 
 - `MultiPrior.m`: Move this to the `roast-3.0` folder.
 - `renameFiles.M`: Move this to the `roast-3.0` folder.
@@ -31,26 +32,42 @@ To add MultiPrior to ROAST you will need to download the MultiPrior zip file and
   - `best_model_tf2_singleGPUepoch100.h5`
   - `scripts` folder
     
-  - After cloning the repository, Create MultiPriors Enviornment using the .yml file specific to your computer and move to MultiPriors_WEB folder
+  - After cloning the repository, Create MultiPriors Enviornment using the batch file specific to your operating system:
 
 ```
 WINDOWS
-conda env create -f MultiPriors_env.yml -n MultiPriors_env
-move C:\path\to\anaconda3\envs\MultiPriors_env C:\path\to\roast-3.0\lib\MultiPriors_WEB
+
+Double click and the 'setupWindows.bat' file and it will automatically download the enviornment.
+It will use the 'MultiPriors_env.yml' file 
+*Anconda must already be installed for this to work.
 ```
 
 ```
 LINUX (Ubuntu 22.04)
-conda env create -f  MultiPriors_env_linux.yml -n MultiPriors_env_linux
-mv /path/to/anaconda3/envs/MultiPriors_env_linux /path/to/roast-3.0/lib/MultiPriors_WEB
+
+Run the 'setupLinux.sh' file in bash and it will download the enviornment.
+It will use the 'MultiPriors_env_Linux.yml' file 
+*Anconda must already be installed for this to work.
 ```
 
 ```
 macOS
-conda env create -f  MultiPriors_env_mac.yml -n MultiPriors_env_mac
-mv /path/to/anaconda3/envs/MultiPriors_env_mac /path/to/roast-3.0/lib/MultiPriors_WEB
+
+Run the 'setupMac.sh' file in bash and it will download the enviornment.
+It will use the 'MultiPriors_env_Mac.yml' file 
+*Anconda must already be installed for this to work.
 ```
 
+```
+Alternative
+
+Create your own conda enviornment named 'MultiPriors_env' with the proper OS tag (None, Linux, or Mac) 
+Place the enviornment into your MultiPriors_WEB Folder
+Conda Install:
+-tensorflow
+-scikit-image
+-nibabel
+```
 - `ROAST_GUI.mlappinstall`: Move this to the `roast-3.0` folder.
 
 That's it! You should now have MultiPrior integrated into your ROAST 3.0 installation.
