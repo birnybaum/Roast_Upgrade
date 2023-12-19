@@ -11,7 +11,7 @@ The most recent ROAST update will have a new feature installed: MultiPrior. The 
 
     roast('example/subject1.nii',[],'multiprior','on')
 
-Run simulaiton on subject1 with default recipe, but use multiprior segmenations instead of spm.
+Run simulation on subject1 with default recipe, but use multiprior segmentations instead of spm.
 
 ## Installing MultiPrior
 
